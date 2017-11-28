@@ -14,6 +14,16 @@ app_license = "GNU General Public License"
 fixtures = [
  {"doctype":"Custom Field"}
  ]
+doc_events = {
+	
+	"Sales Order": {
+		"on_submit": "erpnext.selling.doctype.sales_order.custom_hook.generic_data_mapping",
+		"on_cancel": "erpnext.selling.doctype.sales_order.custom_hook.generic_data_mapping",
+	},
+	"Delivery Note": {
+                "on_submit": "erpnext.selling.doctype.sales_order.custom_hook.generic_data_mapping"
+        }
+}
 #doc_events = {
 #	
 #	"Sales Order": {
