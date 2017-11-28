@@ -15,7 +15,6 @@ fixtures = [
  {"doctype":"Custom Field"}
  ]
 doc_events = {
-	
 	"Sales Order": {
 		"on_submit": "erpnext.selling.doctype.sales_order.custom_hook.generic_data_mapping",
 		"on_cancel": "erpnext.selling.doctype.sales_order.custom_hook.generic_data_mapping",
